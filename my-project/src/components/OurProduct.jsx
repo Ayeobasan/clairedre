@@ -4,7 +4,7 @@ import Product from "../components/Product/Product";
 const OurProduct = () => {
   return (
     <div>
-      <div className="relative  h-[60vh]">
+      <div className="relative  bg-white h-[60vh]">
         <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
         <div
           className="absolute inset-0 bg-contain bg-center z-0"

@@ -129,7 +129,7 @@ const Navbar = () => {
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="flex flex-col items-center space-y-6 justify-center m-auto h-full py-8">
-          <a href="#" className="text-[#8cc63f] text-lg">
+          <a href="" className="text-[#8cc63f] text-lg">
             Home
           </a>
           <a href="/about-us" className="text-white text-lg">

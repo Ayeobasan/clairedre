@@ -28,7 +28,7 @@ const Card = ({ openCard }) => {
           } transition-transform duration-300 ease-in-out `}
         >
           <div className="  ">
-            <div className="bg-white shadow-2xl rounded-s-[5%] p-4 w-[60%] h-[100vh] md:w-[50%] lg:w-[50%]  ml-auto">
+            <div className="bg-white text-black shadow-2xl rounded-s-[5%] p-4 w-[60%] h-[100vh] md:w-[50%] lg:w-[50%]  ml-auto">
               <div className="flex w-full font-bold text-xl px-4 py-1 items-center  justify-between">
                 <p>Cart Item</p>
                 <div
@@ -87,9 +87,9 @@ const Card = ({ openCard }) => {
 
       {/* mobile */}
 
-      <div className="absolute z-30 block sm:hidden   w-full">
+      <div className="absolute z-30 block sm:hidden text-black  w-full">
         <div className="bg-[#0000008a] fixed w-full h-[100vh]">
-          <div className="bg-white absolute w-full bottom-0 px-4 h-[70vh] rounded-t-[10%]">
+          <div className="bg-white absolute text-black w-full bottom-0 px-4 h-[70vh] rounded-t-[10%]">
             <div className="flex w-full items-center p-2  justify-between">
               <p className=" font-bold text-xl">Cart Item</p>
               <div

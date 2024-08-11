@@ -27,7 +27,7 @@ const ProductCart = ({ key, id, name, price, cover }) => {
             alt=""
           />
         </div>
-        <div className=" xd:relative xd:w-[50%]   text-sm flex  items-end justify-between  ">
+        <div className=" xd:relative xd:w-[50%] text-black  text-sm flex  items-end justify-between  ">
           <div className=" h-[100%] xd:pl-2 w-[75%] xd:w-[100%]">
             <p>${price}</p>
             <p className=" text-xs md:text-base">{name}</p>

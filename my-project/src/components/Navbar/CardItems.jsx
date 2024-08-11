@@ -30,7 +30,7 @@ const CardItems = ({
 
   return (
     <div key={id} className="p-4 bg">
-      <div className="flex justify-between items-start">
+      <div className="flex text-black justify-between items-start">
         <div className=" relative  w-[30%] ">
           <img src={cover} alt="" />
           <button
@@ -42,7 +42,7 @@ const CardItems = ({
             {/* <FaTimes className=" bg-white rounded-full p-1" size={25} /> */}
           </button>
         </div>
-        <div className="w-[63%]">
+        <div className="w-[63%] text-black">
           <div>
             <p>{name}</p>
             <label className=" text-xs" htmlFor="">

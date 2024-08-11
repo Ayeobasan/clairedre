@@ -5,7 +5,7 @@ import ProductCart from "./ProductCart";
 const Product = () => {
   return (
     <div className="p-4">
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+      <div className="grid sm:grid-cols-2 bg-white md:grid-cols-3 gap-4 ">
         {product.map((item) => (
           <ProductCart
             key={item.id}

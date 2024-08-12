@@ -12,7 +12,7 @@ const Footer = () => {
         }}
       >
         <div className="  z-20 w-full py-8 px-2 xd:px-8  ">
-          <div className="sm:flex justify-between items-center space-y-3 sm:space-x-16">
+          <div className="max-w-7xl m-auto sm:flex justify-between items-center space-y-3 sm:space-x-16">
             <div className="">
               {/* <img
                   src="https://picsum.photos/50"
@@ -58,11 +58,11 @@ const Footer = () => {
               <div>
                 <h2 className="text-white text-lg font-bold">Links</h2>
                 <ul className="mt-4 space-y-2">
-                  <li>Our Projects</li>
-                  <li>About Us</li>
-                  <li>Our Mission</li>
-                  <li>Meet the Team</li>
-                  <li>Contact</li>
+                  <li><a href="/our-products">Our Projects</a></li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/about-us">Our Mission</a></li>
+                  <li><a href="/about-us">Meet the Team</a></li>
+                 
                 </ul>
               </div>
               <div>

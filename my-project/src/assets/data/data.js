@@ -156,7 +156,7 @@ export const product = [
   // },
   {
     id: 7,
-    name: "Fried Goat meat",
+    name: "Fried cows (beef) meat",
     price: 6.99,
     qty: 1,
     // category: "Beauty Care",
@@ -165,7 +165,7 @@ export const product = [
   },
   {
     id: 8,
-    name: "Grid Goat meat ",
+    name: "Grid cow meat ",
     price: 89.95,
     qty: 1,
     // category: "Oral Care",

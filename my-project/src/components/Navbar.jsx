@@ -11,13 +11,16 @@ const Navbar = () => {
   const openCard = () => {
     setCardOpen((prev) => !prev);
   };
+  const openMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
   // const user = true;
   // const [profileOpen, setProfileOpen] = useState(false);
 
   const quantity = useSelector((state) => state.cart.totalQuantity);
-  useEffect(() => {
+  // useEffect(() => {
     localStorage.setItem("Quantity", JSON.stringify(quantity));
-  }, [quantity]);
+  // }, [quantity]);
 
   // const close = () => {
   //   setProfileOpen(null);
@@ -54,7 +57,7 @@ const Navbar = () => {
             : "bg-transparent text-white"
         }`}
       >
-        <div className="relative flex items-center justify-between">
+        <div className="relative max-w-7xl m-auto flex items-center justify-between">
           <div className="flex items-center">
             <div>
               <h1 className=" text-2xl font-bold">Logo</h1>
@@ -68,18 +71,21 @@ const Navbar = () => {
             <a href="/about-us" className=" text-lg">
               About
             </a>
-            <a href="#services" className=" text-lg">
+            {/* <a href="#services" className=" text-lg">
               Services
-            </a>
+            </a> */}
             <a href="/our-products" className=" text-lg">
-              Our Product
+              Our Products
             </a>
             <a href="#footer" className=" text-lg">
               Contact
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="/our-product" className="bg-[#45c429]  py-2 px-4 rounded-full flex items-center">
+            <a
+              href="/our-product"
+              className="bg-[#45c429]  py-2 px-4 rounded-full flex items-center"
+            >
               <span className="mr-2">Shop Now</span>
               <i className="fas fa-arrow-right"></i>
             </a>
@@ -103,7 +109,7 @@ const Navbar = () => {
               className={`${
                 isScrolled ? " text-black drop-shadow-xl" : " text-white"
               }`}
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={openMenu}
             >
               <svg
                 className="w-6 h-6"
@@ -124,29 +130,35 @@ const Navbar = () => {
         </div>
       </div>
       <div
+        onClick={openMenu}
         className={`fixed top-0 left-0 inset-0 z-40 w-full bg-black bg-opacity-90 transform ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        <div className="flex flex-col items-center space-y-6 justify-center m-auto h-full py-8">
+        <div
+          onClick={openMenu}
+          className="flex flex-col items-center space-y-6 justify-center m-auto h-full py-8"
+        >
           <a href="/" className="text-[#8cc63f] text-lg">
             Home
           </a>
           <a href="/about-us" className="text-white text-lg">
             About
           </a>
-          <a href="#services" className="text-white text-lg">
+          {/* <a href="#services" className="text-white text-lg">
             Services
-          </a>
+          </a> */}
           <a href="/our-products" className="text-white text-lg">
-            Our Produsts
+            Our Products
           </a>
           <a href="#footer" className="text-white text-lg">
             Contact
           </a>
           <button className="bg-[#fdd835] text-black py-2 px-4 rounded-full flex items-center">
-            <span className="mr-2">Get a Quote</span>
-            <i className="fas fa-arrow-right"></i>
+            <a href="/Signup">
+              <span className="mr-2">My account</span>
+              <i className="fas fa-arrow-right"></i>
+            </a>
           </button>
         </div>
       </div>

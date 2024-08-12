@@ -56,9 +56,10 @@ const Home = () => {
               <h2 className="text-3xl xs:text-[50px] text-[#4caf50] font-bold">
                 Meet Your Farmer
               </h2>
+              <a href="/about-us">
               <button className="mt-6 px-6 py-3 bg-[#4caf50] text-[white] font-semibold rounded-[4px]">
                 Learn More
-              </button>
+              </button></a>
             </div>
             <div className="sm:w-[70%] space-y-5">
               <p className="xs:text-lg text-black font-bold">FARM FRESH GOODNESS</p>
@@ -83,7 +84,7 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xs:w-[90%] m-auto md:w-full">
               <div className="relative">
                 <img
-                  src="https://th.bing.com/th/id/OIP.WGFDtjpE_Eu70cQMj3nzxQHaEJ?w=800&h=448&rs=1&pid=ImgDetMain"
+                  src="https://www.expondo.fr/inspirations/wp-content/uploads/2021/04/chicken-farm.jpg"
                   alt="Experience"
                   className="w-full h-[400px] object-cover rounded-[8px]"
                 />
@@ -161,9 +162,10 @@ const Home = () => {
             <h2 className="text-[36px] font-bold">
               We Provide Only Quality Products
             </h2>
-            <button className="mt-6 px-6 py-3 bg-[#fdd835] text-[#000000] font-semibold rounded-[4px]">
-              Learn More
-            </button>
+            <a href="/about-us">
+              <button className="mt-6 px-6 py-3 bg-[white] text-[#4caf50] font-semibold rounded-[4px]">
+                Learn More
+              </button></a>
           </div>
         </section>
 
@@ -334,6 +336,7 @@ const Home = () => {
             </h2>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-[#ffffff] text-black p-6 rounded-[8px] shadow-md">
+                
                 <h3 className="text-[24px] font-semibold">
                   New Product Launch
                 </h3>

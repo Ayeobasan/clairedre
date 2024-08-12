@@ -18,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
 import Aboutus from "./components/Aboutus";
+import Signup from "./components/Signup";
 
 function App() {
   const cartItems = useSelector((state) => state.cart.itemsList);
@@ -40,10 +41,14 @@ function App() {
   }, []);
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<Aboutus />} />
-        <Route path="/our-products" element={<OurProduct />} />
+      <Route>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          
+          <Route path="/about-us" element={<Aboutus />} />
+          <Route path="/our-products" element={<OurProduct />} />
+        </Route>
+        <Route path="/Signup" element={<Signup />} />
       </Route>
     )
   );

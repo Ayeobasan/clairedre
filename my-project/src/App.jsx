@@ -19,6 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
 import Aboutus from "./components/Aboutus";
 import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 
 function App() {
   const cartItems = useSelector((state) => state.cart.itemsList);
@@ -49,6 +50,7 @@ function App() {
           <Route path="/our-products" element={<OurProduct />} />
         </Route>
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
       </Route>
     )
   );

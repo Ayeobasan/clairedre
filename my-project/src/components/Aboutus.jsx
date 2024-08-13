@@ -4,7 +4,7 @@
 //   return (
 // <div className="flex flex-col items-center p-6 md:p-12 lg:p-20 bg-gray-100">
 //   <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">About</h1>
-//   <h2 className="text-3xl font-semibold mb-4 text-center text-gray-700">Doyle Cattle Farm</h2>
+//   <h2 className="text-3xl font-semibold mb-4 text-center text-gray-700">clairedre</h2>
 
 //   <section className="mb-12 max-w-4xl text-center">
 //     <h3 className="text-2xl font-semibold mb-4 text-gray-800">Our Farm</h3>
@@ -46,7 +46,7 @@ const Aboutus = () => {
           AboutUs
         </h1>
         <h2 className="text-3xl font-semibold mb-4 text-center ">
-        Welcome to Doyle Cattle Farm
+        Welcome to clairedre
         </h2>
           {/* <button className="mt-4 px-6 py-3 bg-[#fdd835] text-[#000000] font-semibold rounded-[4px]">
             Learn More
@@ -110,7 +110,7 @@ const Aboutus = () => {
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
                   Our team is composed of dedicated professionals who are passionate about farming and animal care.
-                  We work together to ensure that Doyle Cattle Farm remains a leader in the industry.
+                  We work together to ensure that clairedre remains a leader in the industry.
                 </p>
 
                 <div className="mt-10">

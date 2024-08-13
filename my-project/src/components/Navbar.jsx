@@ -59,17 +59,17 @@ const Navbar = () => {
       >
         <div className="relative max-w-7xl m-auto flex items-center justify-between">
           <div className="flex items-center">
-            <div>
+            <a href="/">
               <h1 className=" text-2xl font-bold">Logo</h1>
               <p className=" text-sm">Company moto</p>
-            </div>
+            </a>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="/" className=" text-lg">
               Home
             </a>
             <a href="/about-us" className=" text-lg">
-              About
+              About us
             </a>
             {/* <a href="#services" className=" text-lg">
               Services
@@ -143,7 +143,7 @@ const Navbar = () => {
             Home
           </a>
           <a href="/about-us" className="text-white text-lg">
-            About
+            About us
           </a>
           {/* <a href="#services" className="text-white text-lg">
             Services

@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
+  <>
+  <div className=" bg-[#4caf50] h-4 w-full"></div>
     <div className="relative" id="footer">
+
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
       <div
         className="absolute w-full h-[180vh] sm:h-[170vh] md:h-[80vh] inset-0 bg-cover bg-center z-0"
@@ -45,8 +48,8 @@ const Footer = () => {
               <div>
                 <h2 className=" text-lg font-bold">About</h2>
                 <p className=" mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                  eiusmod tempor incididunt ut labore et.
+                  Welcome to Clairedre Farms, your source for pasture-raised
+                  poultry and farm-fresh eggs.
                 </p>
                 <div className="flex space-x-4 mt-4">
                   <i className="fab fa-facebook text-white text-2xl"></i>
@@ -58,11 +61,18 @@ const Footer = () => {
               <div>
                 <h2 className="text-white text-lg font-bold">Links</h2>
                 <ul className="mt-4 space-y-2">
-                  <li><a href="/our-products">Our Projects</a></li>
-                  <li><a href="/about-us">About Us</a></li>
-                  <li><a href="/about-us">Our Mission</a></li>
-                  <li><a href="/about-us">Meet the Team</a></li>
-                 
+                  <li>
+                    <a href="/our-products">Our Projects</a>
+                  </li>
+                  <li>
+                    <a href="/about-us">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/about-us">Our Mission</a>
+                  </li>
+                  <li>
+                    <a href="/about-us">Meet the Team</a>
+                  </li>
                 </ul>
               </div>
               <div>
@@ -76,9 +86,7 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className="text-white text-lg font-bold">Newsletter</h2>
-                <p className=" mt-4">
-                  Sign up now for weekly news and updates
-                </p>
+                <p className=" mt-4">Sign up now for weekly news and updates</p>
                 <div className="mt-4">
                   <input
                     type="email"
@@ -98,6 +106,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

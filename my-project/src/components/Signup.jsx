@@ -45,12 +45,12 @@ export default function Signup() {
           </div>
 
           <div className="xs:flex space-y-3 sm:space-y-0 items-center justify-between">
-            <div className="flex bg-white items-center">
+            <div className="flex  items-center">
               <input
                 id="remember-me"
                 name="remember-me"
                 type="checkbox"
-              className="w-4 h-4 text-green-600 bg-white border-gray-300 rounded focus:ring-green-500"
+              className="w-4 h-4  bg-white border-gray-300 rounded focus:ring-green-500"
               />
               <label
                 htmlFor="remember-me"

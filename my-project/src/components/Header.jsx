@@ -9,7 +9,7 @@ const Header = () => {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "url('https://static.wixstatic.com/media/5eed26_07076fb0b00e44e1b78e0f0b9042d4f4~mv2.jpg/v1/fill/w_980,h_832,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5eed26_07076fb0b00e44e1b78e0f0b9042d4f4~mv2.jpg')",
+            "url('https://i.pinimg.com/736x/2b/16/e7/2b16e70133102c17c902aa1914a58f9b.jpg')",
         }}
       ></div>
       {/* Fixed Navigation Bar with Conditional Background */}

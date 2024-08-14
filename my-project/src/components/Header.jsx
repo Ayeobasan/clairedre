@@ -9,7 +9,7 @@ const Header = () => {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "url('https://i.pinimg.com/736x/2b/16/e7/2b16e70133102c17c902aa1914a58f9b.jpg')",
+            "url('https://i.pinimg.com/originals/56/fe/cb/56fecb95f679ceacc1f14f89146ddfe4.jpg')",
         }}
       ></div>
       {/* Fixed Navigation Bar with Conditional Background */}

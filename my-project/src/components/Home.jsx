@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import FAQitem from "./FAQItem"
+import FAQitem from "./FAQItem";
+import Table from "./Table";
+import Article from "./Article";
 
 const Home = () => {
   return (
@@ -20,7 +22,7 @@ const Home = () => {
                   fresh.
                 </p>
                 <button className="mt-6 px-6 py-3 bg-[white] text-[#000000] font-semibold rounded-[4px]">
-                <a href="/our-products">See more...</a>
+                  <a href="/our-products">See more...</a>
                 </button>
               </div>
               {/* Highlighting Farming Solutions at Clairedre Farms */}
@@ -31,7 +33,7 @@ const Home = () => {
                   farming solutions.
                 </p>
                 <button className="mt-6 px-6 py-3 bg-[#4caf50] text-[white] font-semibold rounded-[4px]">
-                <a href="/our-products">See more...</a>
+                  <a href="/our-products">See more...</a>
                 </button>
               </div>
               {/* Highlighting Agriculture Products at Clairedre Farms */}
@@ -42,7 +44,7 @@ const Home = () => {
                   our farm to your table.
                 </p>
                 <button className="mt-6 px-6 py-3 bg-[white] text-[#000000] font-semibold rounded-[4px]">
-                <a href="/our-products">See more...</a>
+                  <a href="/our-products">See more...</a>
                 </button>
               </div>
             </div>
@@ -57,12 +59,15 @@ const Home = () => {
                 Meet Your Farmer
               </h2>
               <a href="/about-us">
-              <button className="mt-6 px-6 py-3 bg-[#4caf50] text-[white] font-semibold rounded-[4px]">
-                Learn More
-              </button></a>
+                <button className="mt-6 px-6 py-3 bg-[#4caf50] text-[white] font-semibold rounded-[4px]">
+                  Learn More
+                </button>
+              </a>
             </div>
             <div className="sm:w-[70%] space-y-5">
-              <p className="xs:text-lg text-black font-bold">FARM FRESH GOODNESS</p>
+              <p className="xs:text-lg text-black font-bold">
+                FARM FRESH GOODNESS
+              </p>
               <p className="mt-4 text-black  text-[18px]">
                 Welcome to Clairedre Farms, your source for pasture-raised
                 poultry and farm-fresh eggs.
@@ -84,20 +89,27 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xs:w-[90%] m-auto md:w-full">
               <div className="relative">
                 <img
-                  src="https://www.expondo.fr/inspirations/wp-content/uploads/2021/04/chicken-farm.jpg"
+                  src="https://primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-133_1.jpg?v=1688620985&width=550"
                   alt="Experience"
-                  className="w-full h-[400px] object-cover rounded-[8px]"
+                  className="w-full h-[600px] object-cover"
                 />
-                {/* Clairedre Farms' 30+ Years of Experience */}
-                {/* <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="bg-[#000000] bg-opacity-50 p-6 rounded-[8px]">
-            <h3 className="text-[36px] font-bold">30+ Years of Experience</h3>
-          </div>
-        </div> */}
               </div>
-              <div className="bg-[#ffffff] p-6 rounded-[8px] shadow-md">
+              <div className="flex flex-col  justify-center py-8 px-4 md:px-16 space-y-4">
+                <h2 className="text-3xl font-bold">
+                  The Cleanest Meat in Canada
+                </h2>
+                <p className="text-lg italic">"You are what you eat eats."</p>
+                <p className="text-lg">
+                  We've set the gold standard for nutrient density since
+                  starting with 50 birds in our SoCal backyard in 2012, and we
+                  have never compromised on our values.
+                </p>
+                <div className="text-md text-blue-500 font-medium">
+                  SEE HOW OUR CHICKEN STACKS UP BELOW
+                </div>
+              </div>
+              {/* <div className="bg-[#ffffff] p-6 rounded-[8px] shadow-md">
                 <h3 className="text-[24px] font-semibold">What We Offer</h3>
-                {/* Highlighting Clairedre Farms' Key Offerings */}
                 <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
                   <div className="flex items-center">
                     <div className="bg-[#4caf50] text-white p-4 rounded-[50%]">
@@ -152,12 +164,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
 
-        <section className="bg-[#4caf50] py-12 text-center text-white">
+        <Table />
+        {/* <section className="bg-[#4caf50] py-12 text-center text-white">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-[36px] font-bold">
               We Provide Only Quality Products
@@ -165,9 +178,41 @@ const Home = () => {
             <a href="/about-us">
               <button className="mt-6 px-6 py-3 bg-[white] text-[#4caf50] font-semibold rounded-[4px]">
                 Learn More
-              </button></a>
+              </button>
+            </a>
           </div>
-        </section>
+        </section> */}
+        <div className="bg-[rgb(49,49,48)] text-[rgb(228,228,225)] text-center py-16">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className=" text-3xl md:text-6xl font-bold mb-12">
+              The Primal Standard: Chicken Feed
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className=" p-8 rounded-lg">
+                <h3 className="text-2xl font-semibold mb-4">Primal Pastures</h3>
+                <ul className=" list-inside text-center space-y-2">
+                  <li>Organic Milo and Barley</li>
+                  <li>Organic Peas</li>
+                  <li>Organic Fish Meal</li>
+                  <li>Organic Olive Oil</li>
+                  <li>Insects, Bugs, and Worms</li>
+                  <li>Grasses like rye, fescue, bluestem and wild rye</li>
+                  <li>Forbs like red and white clover</li>
+                  <li>Wildflowers like aster, bergamot, and geranium</li>
+                </ul>
+              </div>
+              <div className=" p-8 rounded-lg">
+                <h3 className="text-2xl font-semibold mb-4">
+                  Everyone Else (99.999%)
+                </h3>
+                <ul className=" list-inside text-center space-y-2">
+                  <li>Corn</li>
+                  <li>Soybeans</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <section className="bg-[#ffffff] py-12">
           <div className="max-w-7xl mx-auto px-4">
@@ -218,43 +263,8 @@ const Home = () => {
         <section className="bg-[#f5f5f5] py-12">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xs:w-[90%] sm:w-[80%] m-auto md:w-full">
-              {/* <div>
-                <h2 className="text-[36px] font-bold">Have Questions?</h2>
-                <div className="mt-4">
-                  <div className="border-b border-[#e0e0e0] py-4">
-                    <h3 className="text-[18px] font-semibold">
-                      Got the Tips for Ignoring your Fault
-                    </h3>
-                    <p className="mt-2 text-[16px]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <div className="border-b border-[#e0e0e0] py-4">
-                    <h3 className="text-[18px] font-semibold">
-                      Got the Tips for Ignoring your Fault
-                    </h3>
-                    <p className="mt-2 text-[16px]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <div className="border-b border-[#e0e0e0] py-4">
-                    <h3 className="text-[18px] font-semibold">
-                      Got the Tips for Ignoring your Fault
-                    </h3>
-                    <p className="mt-2 text-[16px]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
               <div className="bg-white">
-              <FAQitem/>
+                <FAQitem />
               </div>
               <div className="relative">
                 <img
@@ -262,7 +272,10 @@ const Home = () => {
                   alt="Photo Gallery"
                   className="w-full h-[400px] object-cover rounded-[8px]"
                 />
-                <div className=" absolute bottom-14 right-0 text-xl text-[#4caf50] p-4 rounded-[8px] bg-white"> Sheep Coming Soon</div>
+                <div className=" absolute bottom-14 right-0 text-xl text-[#4caf50] p-4 rounded-[8px] bg-white">
+                  {" "}
+                  Sheep Coming Soon
+                </div>
               </div>
             </div>
           </div>
@@ -328,15 +341,15 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="bg-[#ffffff] text-black py-12">
+
+        {/* <section className="bg-[#ffffff] text-black py-12">
           <div className="max-w-7xl mx-auto px-4">
-            {/* News and Updates from Clairedre Farms */}
+            
             <h2 className="text-[36px] font-bold text-center">
               What's Going On
             </h2>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-[#ffffff] text-black p-6 rounded-[8px] shadow-md">
-                
                 <h3 className="text-[24px] font-semibold">
                   New Product Launch
                 </h3>
@@ -363,7 +376,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <Article />
 
         {/* <div className="bg-[#000000]">
           <div className="bg-[#00A651] py-8 ">

@@ -10,11 +10,9 @@ const Home = () => {
       <div>
         <Header />
 
-        <section className="bg-white md:bg-transparent md:z-30 relative md:absolute w-full md:mt-[-150px] py-12">
+        {/* <section className="bg-white md:bg-transparent md:z-30 relative md:absolute w-full md:mt-[-150px] py-12">
           <div className="max-w-7xl mx-auto px-4">
-            {/* Introduction to Clairedre Farms' Key Offerings */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xxs:w-[90%] xs:w-[70%] m-auto md:w-full">
-              {/* Highlighting Harvest at Clairedre Farms */}
               <div className="bg-[#4caf50] text-white p-6 rounded-[8px]">
                 <h3 className="text-[24px] font-semibold">Harvest</h3>
                 <p className="mt-2">
@@ -25,7 +23,6 @@ const Home = () => {
                   <a href="/our-products">See more...</a>
                 </button>
               </div>
-              {/* Highlighting Farming Solutions at Clairedre Farms */}
               <div className="bg-[#ffffff] text-[#000000] p-6 rounded-[8px] shadow-md">
                 <h3 className="text-[24px] font-semibold">Farming</h3>
                 <p className="mt-2">
@@ -36,7 +33,6 @@ const Home = () => {
                   <a href="/our-products">See more...</a>
                 </button>
               </div>
-              {/* Highlighting Agriculture Products at Clairedre Farms */}
               <div className="bg-[#4caf50] text-white p-6 rounded-[8px]">
                 <h3 className="text-[24px] font-semibold">Agriculture</h3>
                 <p className="mt-2">
@@ -49,9 +45,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="bg-[#ffff] md:pt-[250px] py-12 px-2 xd:px-8">
+        <section className="bg-[rgb(245,245,245)]  py-12 px-2 xd:px-8">
           <div className="max-w-7xl sm:flex space-y-8 sm:space-y-0 items-start m-auto w-[90%]">
             {/* Introducing Clairedre Farms and the Farmers Behind It */}
             <div className="sm:w-[60%]">
@@ -281,7 +277,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="bg-[#ffffff] text-black py-12">
+        {/* <section className="bg-[#ffffff] text-black py-12">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-[36px] text-black font-bold text-center">
               What They're Saying
@@ -340,7 +336,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="bg-[#ffffff] text-black py-12">
           <div className="max-w-7xl mx-auto px-4">
@@ -377,7 +373,7 @@ const Home = () => {
             </div>
           </div>
         </section> */}
-        <Article />
+        {/* <Article /> */}
 
         {/* <div className="bg-[#000000]">
           <div className="bg-[#00A651] py-8 ">

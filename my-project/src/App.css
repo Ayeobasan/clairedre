@@ -178,6 +178,7 @@
     /* opacity: 0; */
 }
 .banner__box {
+    color: black;
     max-width: 48%;
     min-width: 25%;
     padding: var(--space-large);
@@ -249,6 +250,7 @@ a, area, button, [role=button], input, label, select, summary, textarea {
     vertical-align: middle;
 }
 .title--medium {
+    
     font-size: var(--font-heading-size-medium);
     line-height: var(--font-heading-line-height);
 }
@@ -257,6 +259,7 @@ a, area, button, [role=button], input, label, select, summary, textarea {
 }
 
 .type--accent {
+    color: black;
     font-family: var(--font-accent-family);
     font-size: var(--font-accent-base-size);
     font-weight: var(--font-accent-weight);

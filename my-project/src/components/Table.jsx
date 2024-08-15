@@ -16,7 +16,7 @@ const Table = () => {
             <th className="px-4 py-2 border border-gray-400 text-left">Vaccine Free Poultry</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-black'>
           <tr>
             <td className="px-4 py-2 border border-gray-400">Primal Pastures</td>
             <td className="px-4 py-2 text-center border border-gray-400">Yes</td>

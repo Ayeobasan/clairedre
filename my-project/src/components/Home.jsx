@@ -79,7 +79,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="services" className="bg-[#f5f5f5] py-12">
+        <section id="services" className="bg-[#f5f5f5] text-black py-12">
           <div className="max-w-7xl mx-auto px-4">
             {/* Showcasing Clairedre Farms' Experience and Offerings */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xs:w-[90%] m-auto md:w-full">
@@ -100,7 +100,7 @@ const Home = () => {
                   starting with 50 birds in our SoCal backyard in 2012, and we
                   have never compromised on our values.
                 </p>
-                <div className="text-md text-blue-500 font-medium">
+                <div className="text-md  font-medium">
                   SEE HOW OUR CHICKEN STACKS UP BELOW
                 </div>
               </div>

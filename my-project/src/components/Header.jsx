@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <header className="relative h-[80vh]">
-      <div className="absolute inset-0 bg-black opacity-20 md:bg-opacity-20 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-20 md:bg-opacity-40 z-10"></div>
       <div
         className="absolute inset-0  md:block sm:bg-cover bg-center z-0"
         style={{

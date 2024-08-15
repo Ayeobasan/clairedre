@@ -90,17 +90,17 @@ const Home = () => {
                   className="w-full h-[600px] object-cover"
                 />
               </div>
-              <div className="flex flex-col  justify-center py-8 px-4 md:px-16 space-y-4">
+              <div className="flex flex-col text-black  justify-center py-8 px-4 md:px-16 space-y-4">
                 <h2 className="text-3xl font-bold">
                   The Cleanest Meat in Canada
                 </h2>
-                <p className="text-lg italic">"You are what you eat eats."</p>
+                <p className="text-lg text-black italic">"You are what you eat eats."</p>
                 <p className="text-lg">
                   We've set the gold standard for nutrient density since
                   starting with 50 birds in our SoCal backyard in 2012, and we
                   have never compromised on our values.
                 </p>
-                <div className="text-md  font-medium">
+                <div className="text-md text-black font-medium">
                   SEE HOW OUR CHICKEN STACKS UP BELOW
                 </div>
               </div>
@@ -210,7 +210,7 @@ const Home = () => {
           </div>
         </div>
 
-        <section className="bg-[#ffffff] py-12">
+        {/* <section className="bg-[#ffffff] py-12">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-[36px] font-bold text-center">
               Explore Projects
@@ -254,7 +254,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="bg-[#f5f5f5] py-12">
           <div className="max-w-7xl mx-auto px-4">

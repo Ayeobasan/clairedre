@@ -5,7 +5,7 @@ const OurProduct = () => {
   return (
     <div className="bg-white">
       <div className="relative   h-[60vh]">
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
         <div
           className="absolute inset-0 bg-contain bg-center z-0"
           style={{
@@ -14,17 +14,37 @@ const OurProduct = () => {
           }}
         ></div>
         
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
-          <h1 className="text-5xl md:text-[50px] xd:text-[50px] xd:w-[50%] font-bold">
-         Our Products
-          </h1>
-          {/* <button className="mt-4 px-6 py-3 bg-[#fdd835] text-[#000000] font-semibold rounded-[4px]">
-            Learn More
-          </button> */}
+        <div className="w-full banner__box absolute right-0 text-black bg-[rgb(245,245,245)] z-20 bottom-0 rounded-tl-[180px] animate animate--step-in animate--loaded text-right ">
+        <div className="flex flex-col gap-4">
+          <h2 className="text-[2.56rem] leading-tight text-black font-serif font-normal">
+            Out Products
+          </h2>
+          <div style={{ "--i": 2 }} className=" type--accent text-black copy--medium ">
+            FOR 100% ORGANIC + PASTURE RAISED + CORN FREE + SOY FREE MEATS
+          </div>
+          <div className="text-[1.25rem] font-normal text-black max-w-[45rem]">
+            Delivered to your doorstep nationwide
+          </div>
+          <div className="content-box__buttons text-black" style={{'--i': 4}}>
+            {/* <a
+              href="/products/primalbox"
+              className="button"
+              data-samitapbl-handle="primalbox"
+            >
+              Choose Your Plan
+            </a> */}
+            <a
+              href="#Products"
+              className="button button--secondary"
+            >
+              Best Shopping experience
+            </a>
+          </div>
         </div>
+      </div>
      
       </div>
-      <div className="bg-white">
+      <div id="Products" className="bg-white ">
          <Product/>
       </div>
         

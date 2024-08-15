@@ -10,39 +10,36 @@ const ProductCart = ({ key, id, name, price, cover }) => {
   const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(cartActions.addToCart({ id, name, price, cover }));
-    toast.success("added")
+    toast.success("added");
   };
   return (
     <div
-      className="  bg-white md:h-[50vh] xd:h-[40vh] p-4 rounded-lg border-2 
-      transition-all
-     ease-in-out duration-[1s]  shadow-xl"
+      className="bg-white md:h-auto xd:h-auto p-4 rounded-lg  
+        transition-all ease-in-out duration-[1s] shadow-xl"
       id="product"
     >
-      <div className="sm xd:flex items-top ">
-        <div to="" className="xd:w-[80%]">
+      <div className="sm xd:flex items-top flex-col">
+        <div className="xd:w-[100%]">
           <img
-            className="w-[100%] xxs:object-cover h-[40vh] md:h-[30vh] xd:h-[35vh] "
+            className="w-[100%] xxs:object-cover h-[40vh] md:h-[30vh] xd:h-[35vh]"
             src={cover}
             alt=""
           />
         </div>
-        <div className=" xd:relative xd:w-[50%] text-black  text-sm flex  items-end justify-between  ">
-          <div className=" h-[100%] xd:pl-2 w-[75%] xd:w-[100%]">
-            <p>${price}</p>
-            <p className=" text-xs md:text-base">{name}</p>
-          </div>
-          <div>
-            <button
-              onClick={addToCart}
-              className="text-[15px] mt-7 xd:absolute 
-               xd:bottom-0 right-0 rounded p-[4px]  w-[100%] 
-                xd:w-[50%] h-9 ml-auto flex items-center justify-between   bg-[rgb(76,175,80)] text-white shado "
-            >
-              <p className="s:hidden xs:block">Add</p>
-              <AiOutlinePlusCircle size={20} />
-            </button>
-          </div>
+        <div className="text-black text-sm flex flex-col  w-full mt-4">
+          <p className="text-xs md:text-base">{name}</p>
+          <p>${price}</p>
+        </div>
+        <div className="w-full mt-4">
+          <button
+            onClick={addToCart}
+            className="text-[15px] rounded p-[4px] w-full 
+                  xd:w-[50%] h-9 ml-auto flex items-center justify-between 
+                  bg-[rgb(76,175,80)] text-white shado"
+          >
+            <p className="s:hidden xs:block">Add</p>
+            <AiOutlinePlusCircle size={20} />
+          </button>
         </div>
       </div>
     </div>

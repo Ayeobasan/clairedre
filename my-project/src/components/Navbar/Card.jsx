@@ -64,7 +64,7 @@ const Card = ({ openCard }) => {
                     type="submit"
                     className=" fixed flex w-[60%] md:w-[50%] bottom-3 justify-center "
                   >
-                    <div className="bg-black bg-opacity-80 backdrop-blur-[1px] drop-shadow-lg  text-white h-14 items-center rounded-lg justify-center w-[80%] flex  ">
+                    <div className="bg-black bg-opacity-80   text-white h-14 items-center rounded-lg justify-center w-[80%] flex  ">
                       <div className="flex justify-between w-[65%]">
                         <span>Proceed To Checkout</span>
                         <label

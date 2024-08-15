@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const quantity = useSelector((state) => state.cart.totalQuantity);
   // useEffect(() => {
-    localStorage.setItem("Quantity", JSON.stringify(quantity));
+  localStorage.setItem("Quantity", JSON.stringify(quantity));
   // }, [quantity]);
 
   // const close = () => {
@@ -58,6 +58,27 @@ const Navbar = () => {
         }`}
       >
         <div className="relative max-w-7xl m-auto flex items-center justify-between">
+          <button
+            className={`${
+              isScrolled ? " text-black drop-shadow-xl block md:hidden" : " text-white block md:hidden"
+            }`}
+            onClick={openMenu}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
           <div className="flex items-center">
             <a href="/">
               <h1 className=" text-2xl font-bold">Logo</h1>
@@ -105,27 +126,6 @@ const Navbar = () => {
               <BiShoppingBag size={27} />
               <span>{quantity}</span>
             </div>
-            <button
-              className={`${
-                isScrolled ? " text-black drop-shadow-xl" : " text-white"
-              }`}
-              onClick={openMenu}
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@ const Navbar = () => {
           <a href="#footer" className="text-white text-lg">
             Contact
           </a>
-          <button className="bg-[#fdd835] text-black py-2 px-4 rounded-full flex items-center">
+          <button className="bg-[#8cc63f] text-black py-2 px-4 rounded-full flex items-center">
             <a href="/Signup">
               <span className="mr-2">My account</span>
               <i className="fas fa-arrow-right"></i>

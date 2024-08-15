@@ -197,12 +197,56 @@
     object-fit: cover;
     width: 100%;
 }
-.animate--step-in.animate--loaded .animate__step-container>* {
-    animation-delay: calc(var(--input-duration)* var(--i));
+.content-box__buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--space-small);
+    width: 100%;
 }
-.animate--fade-in, .animate--step-in, .animate--step-in .animate__step-container>* {
-    animation: animateFadeInUp var(--animation-duration) var(--transition-timing-function) forwards;
-    /* opacity: 0; */
+.button--secondary, .shopify-payment-button__button--unbranded {
+    --button-background-color: var(--color-secondary);
+    --button-background-color-raw: var(--color-secondary-raw);
+    --button-foreground-color: var(--color-secondary-contrast);
+    --button-foreground-color-raw: var(--color-secondary-contrast-raw);
+}
+a, area, button, [role=button], input, label, select, summary, textarea {
+    margin: 0;
+    touch-action: manipulation;
+}
+.button, [type=button], [type=submit], .shopify-challenge__button, #shopify-product-reviews .spr-summary-actions-newreview {
+    --button-background-color: var(--color-primary);
+    --button-background-color-raw: var(--color-primary-raw);
+    --button-foreground-color: var(--color-primary-contrast);
+    --button-foreground-color-raw: var(--color-primary-contrast-raw);
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--button-background-color);
+    border: var(--border-size--thick) solid transparent;
+    border-radius: var(--border-radius-pill);
+    color: var(--button-foreground-color);
+    cursor: pointer;
+    display: flex;
+    fill: currentColor;
+    font-family: var(--font-button-family);
+    font-size: var(--font-button-size);
+    font-weight: 700;
+    justify-content: center;
+    min-height: var(--pointer-element-min-height);
+    height: auto;
+    letter-spacing: var(--font-button-letter-spacing);
+    line-height: 1.1;
+    padding: var(--space-small) var(--space-large);
+    text-align: center;
+    text-decoration: none;
+    text-transform: var(--font-button-text-transform);
+    transition-duration: var(--transition-duration-long);
+    transition-property: box-shadow, border-color, fill, color;
+    transition-timing-function: var(--transition-timing-function);
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
 }
 .title--medium {
     font-size: var(--font-heading-size-medium);

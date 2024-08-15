@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <header className="relative h-[80vh]">
-      <div className="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-10 md:bg-opacity-20 z-10"></div>
       <div
         className="absolute inset-0  md:block sm:bg-cover bg-center z-0"
         style={{
@@ -15,13 +15,11 @@ const Header = () => {
         <img
           src="//primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=1000"
           alt=""
-          srcset="//primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=375 375w, //primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=550 550w, //primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=700 700w, //primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=850 850w, //primalpastures.com/cdn/shop/files/PrimalPasturesJune2023-124.jpg?v=1687818405&amp;width=1000 1000w"
           width="1000"
           height="1500"
           loading="eager"
           sizes="100vw"
           className="block md:hidden banner__image"
-
         ></img>
       </div>
       {/* Fixed Navigation Bar with Conditional Background */}
@@ -38,12 +36,16 @@ const Header = () => {
           <div className="text-[1.25rem] font-normal max-w-[45rem]">
             Delivered to your doorstep nationwide
           </div>
-          <div className="flex flex-wrap gap-2">
-            <a href="/products/primalbox" className="button">
+          <div className="content-box__buttons" style={{'--i': 4}}>
+            {/* <a
+              href="/products/primalbox"
+              className="button"
+              data-samitapbl-handle="primalbox"
+            >
               Choose Your Plan
-            </a>
+            </a> */}
             <a
-              href="/collections/all-products"
+              href="/our-products"
               className="button button--secondary"
             >
               Shop All

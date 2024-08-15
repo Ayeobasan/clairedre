@@ -6,7 +6,7 @@ const Table = () => {
       <table className="max-w-7xl mx-auto border-collapse border border-gray-400">
         <thead className="bg-black text-white">
           <tr>
-            <th className="px-4 py-2  text-white border border-gray-400 text-left">Brand</th>
+            <th className="px-4 py-2   border border-gray-400 text-left">Brand</th>
             <th className="px-4 py-2 border border-gray-400 text-left">Pasture Raised</th>
             <th className="px-4 py-2 border border-gray-400 text-left">Fed Organic</th>
             <th className="px-4 py-2 border border-gray-400 text-left">GMO Free</th>

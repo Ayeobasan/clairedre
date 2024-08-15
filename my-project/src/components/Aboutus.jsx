@@ -113,7 +113,7 @@ const Aboutus = () => {
                   We work together to ensure that clairedre remains a leader in the industry.
                 </p>
 
-                <div className="mt-10">
+                {/* <div className="mt-10">
                   <h4 className="text-lg leading-6 font-medium text-gray-900">
                     Expert Farmers
                   </h4>
@@ -131,7 +131,7 @@ const Aboutus = () => {
                     Our veterinarians are highly skilled and provide exceptional care to ensure the health and well-being
                     of our cattle. Regular health check-ups and preventive measures are a top priority.
                   </p>
-                </div>
+                </div> */}
               </div>
 
               {/* <div className="mt-10 lg:mt-0 lg:order-1">

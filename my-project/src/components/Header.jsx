@@ -25,18 +25,18 @@ const Header = () => {
       {/* Fixed Navigation Bar with Conditional Background */}
       <Navbar />
 
-      <div className="w-full banner__box absolute bg-[rgb(245,245,245)] z-20 bottom-0 element--border-top-right-arch animate animate--step-in animate--loaded content-box--text-align-left">
+      <div className="w-full banner__box absolute text-black bg-[rgb(245,245,245)] z-20 bottom-0 element--border-top-right-arch animate animate--step-in animate--loaded content-box--text-align-left">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[2.56rem] leading-tight font-serif font-normal">
+          <h2 className="text-[2.56rem] leading-tight text-black font-serif font-normal">
             The Only Source
           </h2>
-          <div style={{ "--i": 2 }} className=" type--accent copy--medium ">
+          <div style={{ "--i": 2 }} className=" type--accent text-black copy--medium ">
             FOR 100% ORGANIC + PASTURE RAISED + CORN FREE + SOY FREE MEATS
           </div>
-          <div className="text-[1.25rem] font-normal max-w-[45rem]">
+          <div className="text-[1.25rem] font-normal text-black max-w-[45rem]">
             Delivered to your doorstep nationwide
           </div>
-          <div className="content-box__buttons" style={{'--i': 4}}>
+          <div className="content-box__buttons text-black" style={{'--i': 4}}>
             {/* <a
               href="/products/primalbox"
               className="button"
